@@ -35,6 +35,15 @@ class StringConversionTest: XCTestCase {
         XCTAssert(decimal == decimalFromString)
     }
 
+    func testNSLocaleConversion() {
+        let str = "ja_JP"
+        let locale = NSLocale(localeIdentifier: str)
+        let localeFromString = str as NSLocale
+
+        XCTAssert(locale != nil && localeFromString != nil)
+        XCTAssert(locale == localeFromString)
+    }
+
     func testNSRegularExpressionConversion() {
         let str = "^[abcABC]+$"
         let regex = NSRegularExpression(pattern: str, options: nil, error: nil)

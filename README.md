@@ -12,6 +12,7 @@ extension Type {
 
 - String -> Array\<String\> like Ruby's `%w` notation
 - String -> NSDecimalNumber
+- String -> NSLocale
 - String -> NSRegularExpression
 - String -> NSScanner
 - String -> NSURL

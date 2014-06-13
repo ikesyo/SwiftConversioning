@@ -18,6 +18,10 @@ extension String {
         return NSDecimalNumber(string: self)
     }
 
+    @conversion func __conversion() -> NSLocale {
+        return NSLocale(localeIdentifier: self)
+    }
+
     @conversion func __conversion() -> NSRegularExpression? {
         var error: NSError?
         let regex = NSRegularExpression(pattern: self, options: nil, error: &error)
