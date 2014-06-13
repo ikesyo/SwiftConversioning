@@ -10,6 +10,7 @@
 		CD099EA4194ADF3000CE9091 /* SwiftConversioning.h in Headers */ = {isa = PBXBuildFile; fileRef = CD099EA3194ADF3000CE9091 /* SwiftConversioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD099EAA194ADF3100CE9091 /* SwiftConversioning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD099E9E194ADF3000CE9091 /* SwiftConversioning.framework */; };
 		CD099EB1194ADF3100CE9091 /* SwiftConversioningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD099EB0194ADF3100CE9091 /* SwiftConversioningTests.swift */; };
+		CD099EBB194AE21100CE9091 /* StringConversionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD099EBA194AE21100CE9091 /* StringConversionExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CD099EA9194ADF3100CE9091 /* SwiftConversioningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConversioningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD099EAF194ADF3100CE9091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD099EB0194ADF3100CE9091 /* SwiftConversioningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConversioningTests.swift; sourceTree = "<group>"; };
+		CD099EBA194AE21100CE9091 /* StringConversionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConversionExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CD099EA3194ADF3000CE9091 /* SwiftConversioning.h */,
+				CD099EBA194AE21100CE9091 /* StringConversionExt.swift */,
 				CD099EA1194ADF3000CE9091 /* Supporting Files */,
 			);
 			path = SwiftConversioning;
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD099EBB194AE21100CE9091 /* StringConversionExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +324,7 @@
 		CD099EB5194ADF3100CE9091 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +334,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CD099EB6194ADF3100CE9091 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
