@@ -13,6 +13,10 @@ extension String {
         return NSDecimalNumber(string: self)
     }
 
+    @conversion func __conversion() -> NSScanner {
+        return NSScanner(string: self)
+    }
+
     @conversion func __conversion() -> NSURL {
         return NSURL(string: self)
     }

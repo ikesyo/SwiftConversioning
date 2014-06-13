@@ -28,6 +28,13 @@ class StringConversionTest: XCTestCase {
         XCTAssert(decimal == decimalFromString)
     }
 
+    func testNSScannerConversion() {
+        let str = "ABCDEF"
+        let scanner = NSScanner(string: str)
+        let scannerFromString = str as NSScanner
+        XCTAssert(scanner.string == scannerFromString.string)
+    }
+
     func testNSURLConversion() {
         let URL = NSURL(string: google)
         let URLFromString = google as NSURL
