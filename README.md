@@ -11,6 +11,7 @@ extension Type {
 ## Supported Conversions
 
 - String -> NSDecimalNumber
+- String -> NSRegularExpression
 - String -> NSScanner
 - String -> NSURL
 - String -> NSURLRequest

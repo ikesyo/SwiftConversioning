@@ -13,6 +13,16 @@ extension String {
         return NSDecimalNumber(string: self)
     }
 
+    @conversion func __conversion() -> NSRegularExpression? {
+        var error: NSError?
+        let regex = NSRegularExpression(pattern: self, options: nil, error: &error)
+        if error {
+            return nil
+        } else {
+            return regex
+        }
+    }
+
     @conversion func __conversion() -> NSScanner {
         return NSScanner(string: self)
     }

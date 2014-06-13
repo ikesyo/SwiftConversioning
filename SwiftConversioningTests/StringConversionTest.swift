@@ -28,6 +28,15 @@ class StringConversionTest: XCTestCase {
         XCTAssert(decimal == decimalFromString)
     }
 
+    func testNSRegularExpressionConversion() {
+        let str = "^[abcABC]+$"
+        let regex = NSRegularExpression(pattern: str, options: nil, error: nil)
+        let regexFromString = str as NSRegularExpression?
+
+        XCTAssert(regex != nil && regexFromString != nil)
+        XCTAssert(regex == regexFromString)
+    }
+
     func testNSScannerConversion() {
         let str = "ABCDEF"
         let scanner = NSScanner(string: str)
