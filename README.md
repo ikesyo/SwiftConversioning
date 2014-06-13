@@ -10,6 +10,7 @@ extension Type {
 
 ## Supported Conversions
 
+- String -> NSDecimalNumber
 - String -> NSURL
 - String -> NSURLRequest
 

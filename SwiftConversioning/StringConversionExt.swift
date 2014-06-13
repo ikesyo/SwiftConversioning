@@ -9,6 +9,10 @@
 import Foundation
 
 extension String {
+    @conversion func __conversion() -> NSDecimalNumber {
+        return NSDecimalNumber(string: self)
+    }
+
     @conversion func __conversion() -> NSURL {
         return NSURL(string: self)
     }

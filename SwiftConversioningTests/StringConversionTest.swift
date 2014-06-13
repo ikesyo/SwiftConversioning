@@ -21,6 +21,13 @@ class StringConversionTest: XCTestCase {
         super.tearDown()
     }
 
+    func testNSDecimalNumberConversion() {
+        let str = "123.456789"
+        let decimal = NSDecimalNumber(string: str)
+        let decimalFromString = str as NSDecimalNumber
+        XCTAssert(decimal == decimalFromString)
+    }
+
     func testNSURLConversion() {
         let URL = NSURL(string: google)
         let URLFromString = google as NSURL
