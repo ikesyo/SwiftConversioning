@@ -10,6 +10,7 @@ extension Type {
 
 ## Supported Conversions
 
+- String -> Array\<String\> like Ruby's `%w` notation
 - String -> NSDecimalNumber
 - String -> NSRegularExpression
 - String -> NSScanner

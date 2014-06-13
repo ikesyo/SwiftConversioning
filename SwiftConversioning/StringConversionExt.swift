@@ -9,6 +9,11 @@
 import Foundation
 
 extension String {
+    @conversion func __conversion() -> Array<String> {
+        let nsstr = self as NSString
+        return nsstr.componentsSeparatedByString(" ") as Array<String>
+    }
+
     @conversion func __conversion() -> NSDecimalNumber {
         return NSDecimalNumber(string: self)
     }

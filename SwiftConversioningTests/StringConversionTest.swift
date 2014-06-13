@@ -21,6 +21,13 @@ class StringConversionTest: XCTestCase {
         super.tearDown()
     }
 
+    func testArrayOfStringConversion() {
+        let str = "I My Me Mine"
+        let array = ["I", "My", "Me", "Mine"]
+        let arrayFromString = str as String[]
+        XCTAssert(array == arrayFromString)
+    }
+
     func testNSDecimalNumberConversion() {
         let str = "123.456789"
         let decimal = NSDecimalNumber(string: str)
