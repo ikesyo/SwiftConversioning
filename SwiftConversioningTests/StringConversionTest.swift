@@ -41,4 +41,11 @@ class StringConversionTest: XCTestCase {
         XCTAssert(req == reqFromString)
     }
 
+    func testNSUUIDConversion() {
+        let str = "A26D8246-1ADA-4D96-A782-6C6EAD4AEA0C"
+        let UUID = NSUUID(UUIDString: str)
+        let UUIDFromString = str as NSUUID
+        XCTAssert(UUID == UUIDFromString)
+    }
+
 }

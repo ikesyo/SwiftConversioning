@@ -20,4 +20,8 @@ extension String {
     @conversion func __conversion() -> NSURLRequest {
         return NSURLRequest(URL: self)
     }
+
+    @conversion func __conversion() -> NSUUID {
+        return NSUUID(UUIDString: self)
+    }
 }

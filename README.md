@@ -13,6 +13,7 @@ extension Type {
 - String -> NSDecimalNumber
 - String -> NSURL
 - String -> NSURLRequest
+- String -> NSUUID
 
 ## Contributors
 
