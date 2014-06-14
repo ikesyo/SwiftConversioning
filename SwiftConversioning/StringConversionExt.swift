@@ -48,3 +48,9 @@ extension String {
         return NSUUID(UUIDString: self)
     }
 }
+
+extension NSString {
+    @conversion func __conversion() -> NSCalendar {
+        return NSCalendar(identifier: self)
+    }
+}

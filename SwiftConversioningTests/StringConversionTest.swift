@@ -28,6 +28,15 @@ class StringConversionTest: XCTestCase {
         XCTAssert(array == arrayFromString)
     }
 
+    func testNSCalendarConversion() {
+        let identifier = NSGregorianCalendar
+        let calendar = NSCalendar(identifier: identifier)
+        let calendarFromString = identifier as NSCalendar
+
+        XCTAssert(calendar != nil && calendarFromString != nil)
+        XCTAssert(calendar == calendarFromString)
+    }
+
     func testNSDecimalNumberConversion() {
         let str = "123.456789"
         let decimal = NSDecimalNumber(string: str)

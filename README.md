@@ -10,14 +10,21 @@ extension Type {
 
 ## Supported Conversions
 
-- String -> Array\<String\> like Ruby's `%w` notation
-- String -> NSDecimalNumber
-- String -> NSLocale
-- String -> NSRegularExpression
-- String -> NSScanner
-- String -> NSURL
-- String -> NSURLRequest
-- String -> NSUUID
+### String ->
+
+- Array\<String\> like Ruby's `%w` notation
+- NSDecimalNumber
+- NSLocale
+- NSRegularExpression
+- NSScanner
+- NSURL
+- NSURLRequest
+- NSUUID
+
+### NSString ->
+
+- NSCalendar
+    - Because `NSGregorianCalendar` and so on returns `NSString!`, not `String`.
 
 ## Contributors
 
