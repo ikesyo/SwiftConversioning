@@ -24,7 +24,7 @@ extension Type {
 ### NSString ->
 
 - NSCalendar
-    - Because `NSGregorianCalendar` and so on returns `NSString!`, not `String`.
+    - Because `NSGregorianCalendar` and so on return `NSString!`, not `String`.
 
 ## Contributors
 
