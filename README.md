@@ -10,6 +10,11 @@ extension Type {
 
 ## Supported Conversions
 
+### Array ->
+
+- NSSet
+- NSOrderedSet
+
 ### String ->
 
 - Array\<String\> like Ruby's `%w` notation

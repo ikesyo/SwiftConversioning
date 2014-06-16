@@ -11,6 +11,8 @@
 		CD099EAA194ADF3100CE9091 /* SwiftConversioning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD099E9E194ADF3000CE9091 /* SwiftConversioning.framework */; };
 		CD099EBB194AE21100CE9091 /* StringConversionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD099EBA194AE21100CE9091 /* StringConversionExt.swift */; };
 		CD099EBD194AE34200CE9091 /* StringConversionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD099EBC194AE34200CE9091 /* StringConversionTest.swift */; };
+		CD6B4705194EE731005725DF /* ArrayConversionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B4704194EE731005725DF /* ArrayConversionExt.swift */; };
+		CD6B4707194EEE20005725DF /* ArrayConversionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B4706194EEE20005725DF /* ArrayConversionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		CD099EAF194ADF3100CE9091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD099EBA194AE21100CE9091 /* StringConversionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConversionExt.swift; sourceTree = "<group>"; };
 		CD099EBC194AE34200CE9091 /* StringConversionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConversionTest.swift; sourceTree = "<group>"; };
+		CD6B4704194EE731005725DF /* ArrayConversionExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayConversionExt.swift; sourceTree = "<group>"; };
+		CD6B4706194EEE20005725DF /* ArrayConversionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayConversionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CD099EA3194ADF3000CE9091 /* SwiftConversioning.h */,
+				CD6B4704194EE731005725DF /* ArrayConversionExt.swift */,
 				CD099EBA194AE21100CE9091 /* StringConversionExt.swift */,
 				CD099EA1194ADF3000CE9091 /* Supporting Files */,
 			);
@@ -91,6 +96,7 @@
 		CD099EAD194ADF3100CE9091 /* SwiftConversioningTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD6B4706194EEE20005725DF /* ArrayConversionTest.swift */,
 				CD099EBC194AE34200CE9091 /* StringConversionTest.swift */,
 				CD099EAE194ADF3100CE9091 /* Supporting Files */,
 			);
@@ -214,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD099EBB194AE21100CE9091 /* StringConversionExt.swift in Sources */,
+				CD6B4705194EE731005725DF /* ArrayConversionExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD099EBD194AE34200CE9091 /* StringConversionTest.swift in Sources */,
+				CD6B4707194EEE20005725DF /* ArrayConversionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				CD099EB6194ADF3100CE9091 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD099EB7194ADF3100CE9091 /* Build configuration list for PBXNativeTarget "SwiftConversioningTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				CD099EB9194ADF3100CE9091 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
