@@ -9,11 +9,7 @@
 import Foundation
 
 extension Array {
-    var _toNSArray: NSArray {
-    get {
-        return self as NSArray
-    }
-    }
+    var _toNSArray: NSArray { return self as NSArray }
 
     // MARK: - NSSet conversion
 
